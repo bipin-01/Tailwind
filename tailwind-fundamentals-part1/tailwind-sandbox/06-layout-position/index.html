@@ -9,26 +9,50 @@
   </head>
   <body>
     <!-- Positioning -->
-
+    <div class="relative bg-red-200 h-24 w-1/2">
+      Parent Element
+      <div class="absolute bg-blue-400 bottom-1/2 right-1/2">child</div>
+    </div>
     <!-- Top left corner -->
 
+    <div class="relative bg-blue-300 h-20 w-1/2 mt-4">
+      <div class="absolute bg-red-800 top-0 left-0 h-6 w-6"></div>
+    </div>
     <!-- Top right corner -->
+
+    <div class="relative bg-blue-300 h-24 w-1/2 mt-8">
+      <div class="absolute top-0 right-0 bg-green-300 w-4 h-8"></div>
+    </div>
 
     <!-- Bottom left corner -->
 
-    <!-- Bottom right corner -->
+    <div class="relative h-24 bg-blue-300 w-1/2 mt-6">
+      <div class="absolute bg-green-500 w-6 h-6 bottom-0 left-0"></div>
+    </div>
+    <!-- top right corneer window -->
 
+    <div class="absolute bg-blue-300 h-24 w-24 top-0 right-0"></div>
     <!-- Span top edge -->
 
     <!-- Span left edge -->
 
     <!-- Span right edge -->
 
+    <div class="absolute bg-blue-300 h-48 w-24 right-0 top-24 mt-6">
+      <div class="absolute bg-green-700 w-10 inset-y-0 right-0"></div>
+    </div>
     <!-- Span bottom edge -->
 
     <!-- Display Classes -->
 
     <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-300 z-10">1</div>
+      <div class="absolute left-20 w-24 h-24 bg-blue-400 z-20">2</div>
+      <div class="absolute left-40 w-24 h-24 bg-blue-500">3</div>
+      <div class="absolute left-60 w-24 h-24 bg-blue-600 z-50">4</div>
+      <div class="absolute left-80 w-24 h-24 bg-blue-700">5</div>
+    </div>
 
     <!-- Floats -->
   </body>
